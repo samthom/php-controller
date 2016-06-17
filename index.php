@@ -1,6 +1,13 @@
 
 <?php
 
+$loader=require 'vendor/autoload.php';
+$loader->register();
+
+use Symfony\Component\HttpFoundation\Request;
+
+$request=Request::createFromGlobals();
+
 switch($_SERVER['PATH_INFO]){
 case '/':
 				echo 'This is the homepage';

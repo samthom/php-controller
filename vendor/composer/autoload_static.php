@@ -14,7 +14,10 @@ class ComposerStaticInit21178889f84549692ec9d705a01da2b7
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\HttpKernel\\' => 29,
             'Symfony\\Component\\HttpFoundation\\' => 33,
+            'Symfony\\Component\\EventDispatcher\\' => 34,
+            'Symfony\\Component\\Debug\\' => 24,
         ),
     );
 
@@ -23,9 +26,31 @@ class ComposerStaticInit21178889f84549692ec9d705a01da2b7
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
+        'Symfony\\Component\\HttpKernel\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/http-kernel',
+        ),
         'Symfony\\Component\\HttpFoundation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/http-foundation',
+        ),
+        'Symfony\\Component\\EventDispatcher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
+        ),
+        'Symfony\\Component\\Debug\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/debug',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'P' => 
+        array (
+            'Psr\\Log\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/psr/log',
+            ),
         ),
     );
 
@@ -34,6 +59,7 @@ class ComposerStaticInit21178889f84549692ec9d705a01da2b7
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit21178889f84549692ec9d705a01da2b7::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit21178889f84549692ec9d705a01da2b7::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit21178889f84549692ec9d705a01da2b7::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

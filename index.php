@@ -1,13 +1,15 @@
-
 <?php
 
-require 'Framework/lib/Core.php'
+$query = require 'core/bootstrap.php';
 
-$request=Requset::createFromGlobals();
+// $router = new Router;
 
-$app=new Framework/Core();
+// require 'routes.php';
 
-$response=$app->handle($request);
-$response->send();
+// $uri = trim($_SERVER['REQUEST_URI'], '/');
+// require $router->direct($uri);
+
+require Router::load('routes.php')
+	->direct($uri);
 
 ?>

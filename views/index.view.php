@@ -4,10 +4,9 @@
 	<title>php | home</title>
 </head>
 <body>
-<ul>
-	<li><a href="about.php">About page</a></li>
-	<li><a href="contact.php">Contact page</a></li>
-</ul>
+
+<?php require('partials/nav.php'); ?>
+
 <h1>Tasks for the day</h1>
 
 <ul>

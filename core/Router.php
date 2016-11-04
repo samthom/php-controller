@@ -5,7 +5,7 @@ class Router
 	protected $routes = [];
 	public static function load($file)
 	{
-		$router = new Router;
+		$router = new static;
 		require $file;
 		return $router;
 	}

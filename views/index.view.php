@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>php | home</title>
-</head>
-<body>
-<ul>
-	<li><a href="about.php">About page</a></li>
-	<li><a href="contact.php">Contact page</a></li>
-</ul>
+<?php require 'partials/header.php'; ?>
+
 <h1>Tasks for the day</h1>
 
 <ul>
@@ -21,5 +13,4 @@
 	</li>
 <?php endforeach; ?>
 </ul>
-</body>
-</html>
+<?php require 'partials/footer.php'; ?>

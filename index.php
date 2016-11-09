@@ -1,5 +1,5 @@
 <?php
-
+require 'vendor/autoload.php';
 require 'core/bootstrap.php';
 // die(var_dump($app));
 // $router = new Router;

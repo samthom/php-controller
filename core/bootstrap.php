@@ -1,6 +1,6 @@
 <?php 
-$app = [];
-$app['config'] = require 'config.php';//config.php contais database details and return database array
+//$app = [];
+//$app['config'] = require 'config.php';//config.php contais database details and return database array
 // $app=[
 	//'config'=>database[]
 //]
@@ -8,10 +8,11 @@ $app['config'] = require 'config.php';//config.php contais database details and 
 //require 'core/database/QueryBuilder.php';
 //require 'core/Request.php';
 //require 'core/Router.php';
+App::bind('config',require 'config.php');
+App::bind('database',new QueryBuilder(
 
-$app['database'] = new QueryBuilder(
+	Connection::make(App::get('config')['database'])
 
-	Connection::make($app['config']['database'])
-		);
+));
 
  ?>

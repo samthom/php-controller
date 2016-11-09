@@ -1,6 +1,6 @@
 <?php 
 
-$names = $app['database']->selectAll('users');
+$names = App::get('database')->selectAll('users');
 
 require 'views/index.view.php';
 

@@ -1,4 +1,12 @@
-<?php require('partials/head.php') ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>php | home</title>
+</head>
+<body>
+
+<?php require('partials/nav.php'); ?>
+
 <h1>Tasks for the day</h1>
 
 <ul>
@@ -12,4 +20,5 @@
 	</li>
 <?php endforeach; ?>
 </ul>
-<?php require('partials/footer.php') ?>
+</body>
+</html>

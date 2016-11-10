@@ -1,6 +1,10 @@
-
-<?php require('partials/head.php'); ?>
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+</head>
+<body>
+<?php require('partials/nav.php'); ?>
 <h1>Contact</h1>
-
-<?php require('partials/footer.php') ?>
+</body>
+</html>

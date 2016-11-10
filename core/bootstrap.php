@@ -1,13 +1,7 @@
 <?php 
-//$app = [];
-//$app['config'] = require 'config.php';//config.php contais database details and return database array
-// $app=[
-	//'config'=>database[]
-//]
-//require 'core/database/Connection.php';
-//require 'core/database/QueryBuilder.php';
-//require 'core/Request.php';
-//require 'core/Router.php';
+
+use App\core\App;
+
 App::bind('config',require 'config.php');
 App::bind('database',new QueryBuilder(
 
@@ -17,7 +11,7 @@ App::bind('database',new QueryBuilder(
  function view($name,$data=[])
 {
 	extract($data);
-	return require "views/{$name}.view.php";
+	return require "app/views/{$name}.view.php";
 }
 function redirect($path)
 {

@@ -1,7 +1,9 @@
 <?php 
-/**
- * 
- */
+
+namespace App\controllers;
+
+use App\core\App;
+
  class UsersController 
  {
  	

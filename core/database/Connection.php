@@ -1,7 +1,5 @@
 <?php 
-/**
-* 	database connection class
-*/
+
 class Connection  
 {
 	

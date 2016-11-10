@@ -6,14 +6,15 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App' => $baseDir . '/core/app.php',
+    'App\\controllers\\PageController' => $baseDir . '/app/controllers/PageController.php',
+    'App\\controllers\\UsersController' => $baseDir . '/app/controllers/UsersController.php',
+    'App\\core\\App' => $baseDir . '/core/app.php',
+    'App\\core\\Request' => $baseDir . '/core/Request.php',
+    'App\\core\\Router' => $baseDir . '/core/Router.php',
+    'App\\models\\project' => $baseDir . '/app/models/project.php',
     'ComposerAutoloaderInitc9c063873a8794f11c3989c89e412027' => $vendorDir . '/composer/autoload_real.php',
     'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
     'Composer\\Autoload\\ComposerStaticInitc9c063873a8794f11c3989c89e412027' => $vendorDir . '/composer/autoload_static.php',
     'Connection' => $baseDir . '/core/database/Connection.php',
-    'PageController' => $baseDir . '/controllers/PageController.php',
     'QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
-    'Request' => $baseDir . '/core/Request.php',
-    'Router' => $baseDir . '/core/Router.php',
-    'UsersController' => $baseDir . '/controllers/UsersController.php',
 );
